@@ -1,0 +1,93 @@
+<!--
+    Formulário para cadastro para testar os forms do HTML, o PHP e SQL para comunicar com o banco
+
+    https://www.w3schools.com/html/html_forms.asp
+-->
+
+<!DOCTYPE html>
+
+<hmtl lang="pt-BR">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="keywords" content=""/>
+        <meta name="description" content=""/>
+        <meta name="author" content="John Doe"/>
+        <meta http-equiv="refresh" content="120"/> <!--Temporizador em segundos para atualizar a pagina-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body>
+        <div>
+            Top Bar
+
+            <a href="site-teste.html">Voltar para pagina principal</a>
+        </div>
+        <div>
+            formulario
+            <div>
+                Campos
+
+                <div>
+                    Usuário
+
+                    <form action="php/site-php.php" method="POST">
+                        <fieldset>
+                            <legend>Cadastro de usuário</legend>
+                                Nome
+                            <br>
+                                <input type="text" id="nome_usuario" name="nome_usuario" placeholder="Nome">
+                            <br>
+                                Sobrenome
+                            <br>
+                                <input type="text" id="sobrenome_usuario" name="sobrenome_usuario" placeholder="Sobrenome">
+                            <br>
+                                E-mail
+                            <br>
+                                <input type="email" id="email" name="email" placeholder="E-mail">
+                            <br>
+                                Login
+                            <br>
+                                <input type="text" id="login" name="login" placeholder="Login">
+                            <br>
+                                Senha
+                            <br>
+                                <input type="password" id="password" name="senha" placeholder="Senha">
+                            <br>
+                                Data de nascimento
+                            <br>
+                                <input type="date" id="data_nascimento">
+                            <br>
+                            <label for="pais">País</label>
+                            <br>
+                            <select id="pais" name="pais_origem">
+                                <option value="Brasil">Brasil</option>
+                                <opiton value="United States of America">U.S.A.</opiton>
+                                <option value="Argentina">Argentina</option>
+                                <option value="Alaska">Alaska</option>
+                                <option value="Russia">Rússia</option>
+                                <option value="Hawai">Hawai</option>
+                            </select>
+                            <!--
+                            <input type="month" id="mes" placeholder="Month">
+                            <input type="number" placeholder="NumberTest">
+                            <input type="checkbox" title="País" id="pais" value="País" placeholder="teste">
+                            -->
+                            <input type="submit" id="submit" value="Cadastrar">
+                            <!-- Upload de imagem
+                            <input type="image" id="Imagem">
+                            -->
+
+                        </fieldset>
+                    </form>
+                </div>
+
+                <div>
+                    Personagem
+                </div>
+
+            </div>
+        </div>
+        <footer>
+        </footer>
+    </body>
+</html>
